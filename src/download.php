@@ -1,6 +1,8 @@
 <?php
 
-$conn = mysqli_connect("localhost", "your_mysql_id", "your_mysql_pwd", "your_db_name");
+include("config.php");
+
+$conn = mysqli_connect("localhost", $db_id, $db_pwd, $db_name);
 if(!$conn){
 	die("DB connection failed: " . mysqli_connect_error());
 }

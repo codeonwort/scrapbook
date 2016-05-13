@@ -1,0 +1,33 @@
+li {
+  width: 40%;
+  height: 30px;
+  line-height: 30px;
+}
+li:nth-child(2n) {
+  background: #FEFEFE;
+}
+li:nth-child(2n+1) {
+  background: #99BBCC;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+a:link {
+  color: #000000;
+}
+a:visited {
+  color: #333333;
+}
+a:hover {
+  color: #FF0000;
+}
+a:active {
+  color: #AA0000;
+}
+
+input[type="text"], button[type="button"] {
+  font-size: 18px;
+  font-family: Courier New;
+}

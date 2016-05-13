@@ -1,4 +1,5 @@
 module Main where
+import Config
 
 import Data.Maybe
 import Haste
@@ -13,8 +14,6 @@ main = withElems ["url_txt", "info_txt", "submit_btn", "list"] $ \[url, info, su
 		upload url_value info_value links
 	ajaxRequest GET downloader noParams (update links)
 
-uploader = ""
-downloader = ""
 upload url_value info_value links = do
 	let link = [(toJSString "url", toJSString url_value), (toJSString "info", toJSString info_value)]
 	ajaxRequest GET uploader link (uploadEnd links)
