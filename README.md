@@ -14,6 +14,7 @@
   - uploader = "www.example.com/scrap/uploader.php"
   - remover = "www.example.com/scrap/remover.php"
 4. Create a table of following schema into any MySQL database:
+
     ```
     CREATE TABLE `scrapbook` (
     `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
@@ -22,6 +23,7 @@
     PRIMARY KEY (`id`)
     )
 	```
+
 5. In src/config.php, enter your mysql id, pwd, and database name.
 6. Run the command: `haste-cabal build`. You get Main.js in the folder src.
 7. Move following files to www.example.com/scrap/.
