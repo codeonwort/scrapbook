@@ -22,6 +22,7 @@ ul {
 
 ul .material-icons {
   cursor: pointer;
+  text-rendering: optimizeLegibility;
 }
 
 a {
