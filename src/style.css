@@ -2,12 +2,26 @@ li {
   width: 40%;
   height: 30px;
   line-height: 30px;
+  display: inline-block;
 }
 li:nth-child(2n) {
   background: #FEFEFE;
 }
 li:nth-child(2n+1) {
   background: #99BBCC;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.info_box {
+  padding-left: 5px;
+}
+
+ul .material-icons {
+  cursor: pointer;
 }
 
 a {
